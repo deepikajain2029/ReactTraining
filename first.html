@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script>
+            //decalring varaibles in javascript
+            let a=21;
+            const b=22;
+            console.log('this is my first web page console');
+            console.log('value of a is '+ a)
+            a=22;
+            console.log('modified value of a is '+a)
+
+            let str1="Deepika";
+            let str2="Jain";
+            console.log(str1 + " " +str2);
+
+            let a1="21";
+            let a2="22";
+            console.log(parseInt(a1)+parseInt(a2));
+         
+
+            const person={name:"vaniskha",age:23,subject:"maths"}
+
+            console.log(person.name);
+            console.log(person.age);
+
+            console.log("type of str1 is " +typeof str1);
+            console.log('the type of person is '+typeof(person));
+
+            let numbers=[1,2,3,4,5];
+
+            /*for(i=0;i<5;i++)
+            {
+                console.log(numbers[i]);
+            }*/
+                 
+
+            numbers.forEach(function(n){
+                console.log(n);
+            });
+            
+            function square(n)
+            {
+                return n*n; 
+            }
+
+            let a3=5;
+            console.log(`${square(9)}`);
+            console.log('the square of the number is ' + square(8));
+
+            function isPrime(n)
+            {
+                let prime=true;
+                for(j=2;j<n;j++)
+                {
+                    if(n%j==0)
+                    {
+                        prime=false
+                        break
+                    }
+                }
+                return prime;
+            }
+           console.log('the prime number is ' + isPrime(4));        
+        </script>
+    </head>
+    <body>
+        hello master developer
+    </body>
+</html>

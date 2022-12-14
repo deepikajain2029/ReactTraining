@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <script>
+            // reverse a string
+            let str="Deepika";
+            
+            function reverseString(str) {
+            if (str === "")
+                return "";
+            else
+                return reverseString(str.substr(1)) + str.charAt(0);
+            }
+            console.log(reverseString(str));
+            
+           //Prime Number Between 1 to 100
+
+           function isPrime(n)
+            {
+                let prime=true;
+                for(j=2;j<n;j++)
+                {
+                    if(n%j==0)
+                    {
+                        prime=false
+                        break
+                    }
+                }
+                return prime;
+            }
+            for (k = 2; k <= 1000; k++) {
+                if (isPrime(k))
+                {
+                    console.log(k)
+                }
+            }
+
+            // display sum of numbers on alert box
+            let a=21;
+            let b=33;
+            alert(a+b);
+           // confirm(a+b);
+           // prompt(a+b);
+
+            //display current date & time
+
+            let t1= new Date();
+            console.log(t1.toLocaleDateString() + " " + t1.toLocaleTimeString());
+
+            //email id is valid or not
+            let strEmail="deepika.jain"
+            function validateEmail(email_id) {
+            const regex_pattern =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            
+            if (regex_pattern.test(email_id)){
+                console.log('The email address is valid');
+            }
+            else {
+                console.log('The email address is not valid');
+            }
+            }
+            console.log(validateEmail(strEmail));
+
+            // function Armstrong
+            const number = prompt("Enter a positive integer");
+            const numberOfDigits = number.length;
+            let sum = 0;
+            let temp = number;
+
+            while (temp > 0) {
+
+                    let remainder = temp % 10;
+
+                    sum += remainder ** numberOfDigits;
+                    temp = parseInt(temp / 10); 
+                }
+
+                if (sum == number) {
+                    console.log(`${number} is an Armstrong number`);
+                }
+                else {
+                    console.log(`${number} is not an Armstrong number.`);
+                }
+
+
+            //count the number of vowels in string
+
+            const vowelslist=['a','e','i','o','u'];
+
+            function checkVowels(str)
+            {
+                let count = 0;
+                for (let letter of str.toLowerCase()) {
+                    if (vowelslist.includes(letter)) 
+                    {
+                            count++;
+                    }
+                }
+                return count
+            }
+            console.log(checkVowels("deepika sharma"));
+        </script>
+    </head>
+    <body>
+        hello master developer
+    </body>
+</html>

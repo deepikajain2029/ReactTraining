@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+           let str3="deepika"
+           console.log(str3.length);
+           console.log(str3.substring(1,3))
+           console.log(str3.replace('e','r'));
+           console.log(str3.replaceAll('e','r'));
+           console.log(str3.charAt(5)); // give the value of character at particular position
+           console.log(str3.toUpperCase());
+           console.log(str3.toLowerCase());
+           console.log(str3.substr(4))// removes the number of characters from beginning of the string
+           
+           function reverseString1(str3) {
+                const arrayStrings = str3.split("").reverse().join("");
+                return arrayStrings;
+            }
+            console.log(reverseString1(str3));
+
+            function initCap(str3)
+            {
+                return str3.substring(0,1).toLowerCase() + str3.substring(1,str3.length).toLowerCase();
+            }
+            console.log(initCap("tanisha"));
+
+            let str4="Deepika Jain Sharma";
+            console.log(str4.indexOf(' '));
+
+
+            function capName(str4)
+            {
+                return str4.substring(0,1).toUpperCase() + "." + str4.substring(8,9).toUpperCase() + "." + str4.substring(str4.indexOf(' ')+6,str4.length).toLowerCase();
+
+            }
+            console.log(capName(str4));
+        </script>
+    </head>
+    <body>
+        hello master developer
+    </body>
+</html>
